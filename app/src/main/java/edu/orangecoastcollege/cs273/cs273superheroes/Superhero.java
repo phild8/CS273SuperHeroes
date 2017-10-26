@@ -1,7 +1,12 @@
 package edu.orangecoastcollege.cs273.cs273superheroes;
 
 /**
- * Created by Phil on 10/20/2017.
+ * @author Phillip Davis
+ *
+ * Created by Phil
+ *
+ * The model for the CS273Superheroes
+ * Creates new superheroes with mUserName, mName, mSuperpower, mOneThing, mFileName
  */
 
 public class Superhero {
@@ -11,6 +16,13 @@ public class Superhero {
     private String mOneThing;
     private String mFileName;
 
+    /**
+     * Overloaded Superhero constructor
+     * @param userName the new mUserName
+     * @param name the new mName
+     * @param superpower the new mSuperpower
+     * @param oneThing the new mOneTHing
+     */
     public Superhero(String userName, String name, String superpower, String oneThing) {
         mUserName = userName;
         mName = name;
@@ -20,22 +32,42 @@ public class Superhero {
         mFileName = "Superheroes/" + userName + ".png";
     }
 
+    /**
+     * gets m username
+     * @return mUsername
+     */
     public String getUserName() {
         return mUserName;
     }
 
+    /**
+     * gets the name
+     * @return mUsername
+     */
     public String getName() {
         return mName;
     }
 
+    /**
+     * get the superpower
+     * @return mSuperPower
+     */
     public String getSuperpower() {
         return mSuperpower;
     }
 
+    /**
+     * gets the one thing
+     * @return mOneThing
+     */
     public String getOneThing() {
         return mOneThing;
     }
 
+    /**
+     * get the file name
+     * @return mFileName
+     */
     public String getFileName() {
         return mFileName;
     }

@@ -29,7 +29,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "Flag Quiz"; // Debugging
+    private static final String TAG = "Superhero Qui"; // Debugging
 
     private static final int SUPERHEROES_IN_QUIZ = 10;
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Loads the created quiz on the screen. Will show incorrect and correct button clicks.
-     * Shows the countries flag. Offers a setting button which allows the users to filter between
+     * Shows the Superhero. Offers a setting button which allows the users to filter between
      * different regions and how many buttons are displayed on the screen.
      * @param savedInstanceState Loads the saved instance from the fragment class.
      */
@@ -162,9 +162,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Handles the click event of one of the 4 buttons indicating the guess of a country's name
-     * to match the flag image displayed.  If the guess is correct, the country's name (in GREEN) will be shown,
-     * followed by a slight delay of 2 seconds, then the next flag will be loaded.  Otherwise, the
+     * Handles the click event of one of the 4 buttons indicating the guess of a Superheroes's atrtribute
+     * to match the heroes image displayed.  If the guess is correct, the Superheroes's attribute answer (in GREEN) will be shown,
+     * followed by a slight delay of 2 seconds, then the next hero will be loaded.  Otherwise, the
      * word "Incorrect Guess" will be shown in RED and the button will be disabled.
      * @param v button click
      */
@@ -208,6 +208,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Creates the menu fragment
+     * @param menu the menu to be inflated
+     * @return the menu to inflate
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_settings, menu);
@@ -216,9 +221,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
-     * @param item
-     * @return
+     *  Returns the selected item from the menu fragment
+     * @param item the item selected
+     * @return the array item selected
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

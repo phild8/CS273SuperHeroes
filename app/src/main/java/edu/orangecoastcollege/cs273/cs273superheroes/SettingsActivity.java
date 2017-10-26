@@ -5,6 +5,9 @@ import android.preference.PreferenceFragment;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+/**
+ * The controller of the setting activity. Loads the menu fragment and returns the selected item.
+ */
 public class SettingsActivity extends AppCompatActivity {
 
     /**
