@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string-array name="superhero_attributes">
+      <item>@string/hero_name</item>
+      <item>@string/hero_power</item>
+      <item>@string/hero_thing</item>
+   </string-array>
+
+</resources>

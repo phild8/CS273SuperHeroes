@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/superhero_attributes"
+        android:entryValues="@array/superhero_attributes"
+        android:key="@string/pref_selected"
+        android:title="@string/superheros_title"
+        android:summary="@string/def_superhero_description"
+        android:persistent="true"
+        android:defaultValue="@string/pref_def"
+        />
+</PreferenceScreen>
